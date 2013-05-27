@@ -161,13 +161,8 @@ identity:na,isUndefined:x,isDefined:y,isString:B,isFunction:H,isObject:L,isNumbe
 ngCloak:Bd,ngController:Cd,ngForm:ld,ngHide:Ld,ngInclude:Fd,ngInit:Gd,ngNonBindable:Hd,ngPluralize:Id,ngRepeat:Jd,ngShow:Kd,ngSubmit:Ed,ngStyle:Md,ngSwitch:Nd,ngSwitchWhen:Od,ngSwitchDefault:Pd,ngOptions:Td,ngView:Rd,ngTransclude:Qd,ngModel:qd,ngList:sd,ngChange:rd,required:dc,ngRequired:dc,ngValue:ud}).directive(mb).directive(ec);a.provider({$anchorScroll:uc,$browser:wc,$cacheFactory:xc,$controller:Bc,$document:Cc,$exceptionHandler:Dc,$filter:Rb,$interpolate:Ec,$http:Vc,$httpBackend:Wc,$location:Ic,
 $log:Jc,$parse:Nc,$route:Qc,$routeParams:Rc,$rootScope:Sc,$q:Oc,$sniffer:Tc,$templateCache:yc,$timeout:$c,$window:Uc})}])})(Za);u(Y).ready(function(){jc(Y,rb)})})(window,document);angular.element(document).find("head").append('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak{display:none;}ng\\:form{display:block;}</style>');
 
-    function PhoneListCtrl($scope) {
-    $scope.phones = [
-    {"name": "Nexus S",
-    "snippet": "Fast just got faster with Nexus S."},
-    {"name": "Motorola XOOM™ with Wi-Fi",
-    "snippet": "The Next, Next Generation tablet."},
-    {"name": "MOTOROLA XOOM™",
-    "snippet": "The Next, Next Generation tablet."}
-    ];
-    }
+angular.module('Silex', [])
+    .config(['$interpolateProvider', function ($interpolateProvider) {
+        $interpolateProvider.startSymbol('[[');
+        $interpolateProvider.endSymbol(']]');
+}]);
