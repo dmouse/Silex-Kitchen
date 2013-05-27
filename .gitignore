@@ -1,5 +1,5 @@
 /vendor/
 composer.lock
-/cache/
-/logs/
+/cache/*
+/logs/*
 
