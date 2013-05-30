@@ -1,13 +1,16 @@
 <?php
 
-ini_set('display_errors', 0);
+use Symfony\Component\ClassLoader\DebugClassLoader;
+use Symfony\Component\HttpKernel\Debug\ErrorHandler;
+use Symfony\Component\HttpKernel\Debug\ExceptionHandler;
+use Silex\Provider\MonologServiceProvider;
+use Silex\Provider\WebProfilerServiceProvider;
+
+ini_set('display_errors', -1);
 
 require_once __DIR__.'/../vendor/autoload.php';
 
-
-$app = new Silex\Application();
-
-require __DIR__.'/../config/prod.php';
+$env = 'prod';
 require __DIR__.'/../src/app.php';
-require __DIR__.'/../src/controllers.php';
+
 $app->run();

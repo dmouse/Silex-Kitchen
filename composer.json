@@ -1,11 +1,7 @@
 {
-    "name": "fabpot/silex-skeleton",
-    "description": "A pre-configured skeleton for the Silex microframework",
-    "license": "MIT",
-    "type": "project",
     "require": {
         "php": ">=5.3.3",
-        "silex/silex": "1.0.*",
+        "silex/silex": "1.*",
         "silex/web-profiler": "1.0.*",
         "symfony/browser-kit": "~2.2",
         "symfony/class-loader": "~2.2",
@@ -21,9 +17,15 @@
         "symfony/twig-bridge": "~2.2",
         "symfony/validator": "~2.2",
 
-	"twitter/bootstrap"     : "2.3.*",
-	"leafo/lessphp"         : "dev-master",
-        "mheap/silex-assetic"   : "dev-master@dev"
+        "doctrine/dbal"         : "~2.3",
+        "taluu/doctrine-orm-provider": "1.0.*@dev",
+
+        "doctrine/mongodb-odm": "dev-document-persister-prep",
+
+        "twitter/bootstrap"     : "2.3.*",
+        "leafo/lessphp"         : "dev-master",
+        "mheap/silex-assetic"   : "dev-master@dev",
+        "moriony/silex-mongo-provider": "*"
 	
     },
     "autoload": {

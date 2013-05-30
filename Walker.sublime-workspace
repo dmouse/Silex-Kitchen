@@ -1,0 +1,1291 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"a",
+				"app"
+			],
+			[
+				"fts",
+				"fts_field_costo"
+			],
+			[
+				"fts_fi",
+				"fts_field_variacion_cambiaria"
+			],
+			[
+				"fts_field_",
+				"fts_field_importe_pagado"
+			],
+			[
+				"fts_fiel",
+				"fts_field_importe_adeudado"
+			],
+			[
+				"bundles_",
+				"bundles_node"
+			],
+			[
+				"fiel",
+				"fields"
+			],
+			[
+				"bu",
+				"bundles"
+			],
+			[
+				"bund",
+				"bundle"
+			],
+			[
+				"entit",
+				"entitys"
+			],
+			[
+				"tem",
+				"templates"
+			],
+			[
+				"strto",
+				"strtotime"
+			],
+			[
+				"id",
+				"id_account"
+			],
+			[
+				"saldo_f",
+				"saldo_final"
+			],
+			[
+				"saldo",
+				"saldo_inicial"
+			],
+			[
+				"s",
+				"scope"
+			],
+			[
+				"ca",
+				"char"
+			],
+			[
+				"cli",
+				"clientsAction"
+			],
+			[
+				"th",
+				"this"
+			],
+			[
+				"inde",
+				"indexAction"
+			],
+			[
+				"create_",
+				"create_nodes"
+			],
+			[
+				"res",
+				"resultado"
+			],
+			[
+				"rule",
+				"rules"
+			],
+			[
+				"r",
+				"rule"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"array_p",
+				"array_push"
+			],
+			[
+				"rule_",
+				"rule_debe"
+			],
+			[
+				"fie",
+				"field"
+			],
+			[
+				"fci_",
+				"fci_abono"
+			],
+			[
+				"co",
+				"collection"
+			],
+			[
+				"opera",
+				"operation"
+			],
+			[
+				"operatio",
+				"Operations"
+			],
+			[
+				"cc",
+				"cc_anel"
+			],
+			[
+				"cc_anel_s",
+				"cc_anel_start_date"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"strre",
+				"str_replace"
+			],
+			[
+				"field",
+				"fields"
+			],
+			[
+				"fi",
+				"filter"
+			],
+			[
+				"op",
+				"option"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"pri",
+				"private"
+			],
+			[
+				"or",
+				"orden"
+			],
+			[
+				"va",
+				"vars"
+			],
+			[
+				"var",
+				"vard"
+			],
+			[
+				"is_a",
+				"is_array"
+			],
+			[
+				"resul",
+				"resultado"
+			],
+			[
+				"gett",
+				"gettype"
+			],
+			[
+				"fts_",
+				"fts_field_haber"
+			],
+			[
+				"se",
+				"select"
+			],
+			[
+				"bui",
+				"build"
+			],
+			[
+				"ret",
+				"result"
+			],
+			[
+				"_",
+				"_fields"
+			],
+			[
+				"print_",
+				"print_r"
+			],
+			[
+				"con",
+				"config"
+			],
+			[
+				"ex",
+				"extract"
+			],
+			[
+				"costo_ma",
+				"costo_materia_prima"
+			],
+			[
+				"cos",
+				"costo_materia_prima_orden"
+			],
+			[
+				"pa",
+				"padres_programacion"
+			],
+			[
+				"arry",
+				"array"
+			],
+			[
+				"array",
+				"array"
+			],
+			[
+				"en",
+				"entity_id"
+			],
+			[
+				"do",
+				"document"
+			],
+			[
+				"array_ke",
+				"array_key_exists"
+			],
+			[
+				"no",
+				"no_limit"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"arra",
+				"array"
+			],
+			[
+				"arr",
+				"array"
+			],
+			[
+				"is",
+				"is_null"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"is_",
+				"is_array"
+			],
+			[
+				"print",
+				"print_r"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/controllers.php",
+			"settings":
+			{
+				"buffer_size": 1630,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Walker/Controller/Backend.php",
+			"settings":
+			{
+				"buffer_size": 576,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Walker/Controller/User.php",
+			"settings":
+			{
+				"buffer_size": 197,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Walker/Controller.php",
+			"settings":
+			{
+				"buffer_size": 1376,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/app.php",
+			"settings":
+			{
+				"buffer_size": 4120,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "themes/basic/templates/common/form_div_layout.html.twig",
+			"settings":
+			{
+				"buffer_size": 5084,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "composer.json",
+			"settings":
+			{
+				"buffer_size": 989,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "themes/basic/templates/layout.html.twig",
+			"settings":
+			{
+				"buffer_size": 1457,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 272.0,
+		"selected_items":
+		[
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"sy",
+				"Set Syntax: PHP"
+			]
+		],
+		"width": 602.0
+	},
+	"console":
+	{
+		"height": 146.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/dmouse/public_html/Silex-Skeleton/src/Toddle/Controller/Backend.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_bancos/ccp_haber_bancos.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_anticipo_clientes/ccp_haber_anticipo_clientes.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_anticipo_clientes/ccp_debe_anticipo_clientes.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_bancos/ccp_debe_bancos.php",
+		"/home/dmouse/public_html/Silex-Skeleton/web/index.php",
+		"/home/dmouse/public_html/Silex-Skeleton/themes/basic/templates/menu.html.twig",
+		"/home/dmouse/public_html/Silex-Skeleton/themes/basic/js/main.js",
+		"/home/dmouse/public_html/Silex-Skeleton/config/prod.php",
+		"/home/dmouse/public_html/Silex-Skeleton/config/app.php",
+		"/home/dmouse/public_html/Silex-Skeleton/themes/basic/templates/layout.html",
+		"/home/dmouse/public_html/Silex-Skeleton/web/index_dev.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_caja/ccp_haber_caja.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_anticipo_proveedores/ccp_anticipo_proveedores.module",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_caja/ccp_caja.module",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_anticipo_proveedores/ccp_haber_anticipo_proveedores.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_anticipo_proveedores/ccp_debe_anticipo_proveedores.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_anel.module",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_anticipo_clientes/ccp_anticipo_clientes.module",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/cc_saldos_finales/cc_saldos_finales.module",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/includes/operations.inc",
+		"/home/dmouse/public_html/facturalo/config/prod.php",
+		"/home/dmouse/public_html/facturalo/src/app.php",
+		"/home/dmouse/public_html/facturalo/theme/css/global.css",
+		"/home/dmouse/public_html/facturalo/src/Controller.php",
+		"/home/dmouse/public_html/facturalo/theme/templates/layout.html.twig",
+		"/home/dmouse/public_html/facturalo/theme/templates/base.html.twig",
+		"/home/dmouse/public_html/facturalo/web/index_dev.php",
+		"/home/dmouse/public_html/facturalo/src/controllers.php",
+		"/home/dmouse/public_html/facturalo/theme/js/main.js",
+		"/home/dmouse/public_html/facturalo/src/Dara/App.php",
+		"/home/dmouse/public_html/facturalo/theme/templates/index.html.twig",
+		"/home/dmouse/public_html/facturalo/theme/templates/layout.html",
+		"/home/dmouse/public_html/facturalo/config/dev.php",
+		"/home/dmouse/public_html/facturalo/templates/layout.html",
+		"/home/dmouse/public_html/facturalo/web/app/css/global.css",
+		"/home/dmouse/public_html/facturalo/composer.json",
+		"/home/dmouse/public_html/facturalo/web/index.php",
+		"/home/dmouse/public_html/facturalo/src/console.php",
+		"/home/dmouse/public_html/facturalo/web/facturalo.sublime-project",
+		"/home/dmouse/.config/sublime-text-2/Packages/User/Git.sublime-settings",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_bancos/ccp_bancos.module",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_devoluciones_sobre_ventas/ccp_debe_devoluciones_sobre_ventas.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_mano_obra_x_pagar/ccp_haber_mano_obra_x_pagar.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_mano_obra_x_pagar/ccp_debe_mano_obra_x_pagar.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_mano_obra_x_pagar/ccp_mano_obra_x_pagar.module",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_mano_obra_x_pagar/ccp_mano_obra_x_pagar.info",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_devoluciones_sobre_ventas/ccp_devoluciones_sobre_ventas.module",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/scc_caja/scc_debe_caja.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_descuentos_rebajas_sobre_ventas/ccp_debe_descuentos_rebajas_sobre_ventas.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_descuentos_rebajas_sobre_ventas/ccp_descuentos_rebajas_sobre_ventas.module",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_descuentos_rebajas_sobre_ventas/ccp_haber_descuentos_rebajas_sobre_ventas.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/scc_gastos_de_venta/scc_gastos_de_venta.info",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/scc_gastos_de_venta/scc_gastos_de_venta.module",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/scc_gastos_de_administracion/scc_gastos_de_administracion.info",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/scc_gastos_de_administracion/scc_gastos_de_administracion.module",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/scc_cif/scc_cif.info",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/scc_cif/scc_cif.module",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/scc_caja/scc_caja.module",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/scc_caja/scc_haber_caja.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/scc_bancos/scc_haber_bancos.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/scc_caja/scc_caja.info",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/scc_bancos/scc_bancos.module",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/cpp_ipt/cpp_ipt.module",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/scc_bancos/scc_bancos.info",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/cpp_ipt/ccp_haber_ipt.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/cpp_ipt/ccp_debe_ipt.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/scc_gastos_de_venta/scc_haber_gastos_de_venta.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/scc_gastos_de_venta/scc_debe_gastos_de_venta.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_ventas/ccp_ventas.module",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_ventas/ccp_haber_ventas.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/scc_gastos_de_administracion/scc_haber_gastos_de_administracion.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/scc_gastos_de_administracion/scc_debe_gastos_de_administracion.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/scc_cif/scc_haber_cif.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/scc_cif/scc_debe_cif.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/scc_bancos/scc_debe_bancos.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_proveedores/ccp_proveedores.module",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_iva_trasladado_x_aplicar/ccp_iva_trasladado_x_aplicar.module",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_iva_trasladado/ccp_debe_iva_trasladado.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_iva_trasladado/ccp_iva_trasladado.module",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_iva_acreditable_x_aplicar/ccp_iva_acreditable_x_aplicar.module",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_iva_acreditable_x_aplicar/ccp_debe_iva_acreditable_x_aplicar.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_gastos_de_venta/ccp_debe_gastos_de_venta.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_gastos_de_venta/ccp_gastos_de_venta.module",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_proveedores/ccp_haber_proveedores.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_proveedores/ccp_debe_proveedores.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_iva_trasladado_x_aplicar/ccp_haber_iva_trasladado_x_aplicar.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_iva_trasladado_x_aplicar/ccp_debe_iva_trasladado_x_aplicar.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_iva_trasladado/ccp_haber_iva_trasladado.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_iva_acreditable_x_aplicar/ccp_haber_iva_acreditable_x_aplicar.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_imp/ccp_imp.module",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_imp/ccp_haber_imp.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_iva_acreditable/ccp_iva_acreditable.module",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_iva_acreditable/ccp_debe_iva_acreditable.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_imp/ccp_debe_imp.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_gastos_de_administracion/ccp_gastos_de_administracion.module",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_costo_de_venta/ccp_costo_de_venta.module",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_gastos_de_administracion/ccp_debe_gastos_de_administracion.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_costo_de_venta/ccp_debe_costo_de_ventas.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_clientes/ccp_clientes.module",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_clientes/ccp_debe_clientes.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_clientes/ccp_haber_clientes.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_costos_de_venta/ccp_debe_costo_de_ventas.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_capital_social/ccp_capital_social.module",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_cif/ccp_cif.module",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_cif/ccp_debe_cif.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_cif/ccp_haber_cif.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_capital_social/ccp_haber_capital_social.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_caja/ccp_debe_caja.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_anel.admin.inc",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/cpp_ipp/cpp_ipp.module",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/bc/bc_debe.module",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_clientes/ccp_clientes.info",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_costos_de_venta/ccp_costo_de_venta.module",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/cpp_ipt/cpp_ipt.info",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/cpp_ipp/cpp_ipp.info",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_costos_de_venta/ccp_costo_de_venta.info",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_cif/ccp_cif.module<",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_caja/ccp_caja.info",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_bancos/ccp_bancos.info",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_proveedores/ccp_proveedores.info",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_imp/ccp_imp.info",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_cif/ccp_cif.info",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_documentos_por_cobrar/ccp_debe_documentos_por_cobrar.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/bc_debe.module",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_debe_ipp.php",
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_haber_ipp.php",
+		"/home/dmouse/Downloads/SMS/sms_console.py"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"tran",
+			"trans",
+			"operation",
+			"')) ",
+			"path_",
+			"{{",
+			"}}",
+			"{{",
+			"twig",
+			"web",
+			"$query",
+			"$query[]",
+			"rule_",
+			"prin",
+			"right",
+			"bs_field_estatus",
+			"hr",
+			"echo",
+			"prin",
+			"pring",
+			"debe",
+			"haber",
+			"							\n",
+			"fecha_corte",
+			"] => a",
+			"= a",
+			"['select']",
+			"[$key]",
+			"ó",
+			"detall",
+			"<field name=\"[a-zA-Z_]*\"",
+			"<field name"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"[[",
+			"]]",
+			"[[",
+			"$query_haber",
+			"$query_debe",
+			"$query_haber",
+			"$query_debe",
+			"$query_haber",
+			"$query_debe",
+			"$query_haber[]",
+			"$query_debe[]",
+			"] = a",
+			"=> a",
+			"",
+			"<field name=\"_version_\"",
+			"<field name=\"_version_\" type"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/controllers.php",
+					"settings":
+					{
+						"buffer_size": 1630,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								433,
+								433
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/Walker/Controller/Backend.php",
+					"settings":
+					{
+						"buffer_size": 576,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								196,
+								196
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/Walker/Controller/User.php",
+					"settings":
+					{
+						"buffer_size": 197,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								194,
+								194
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/Walker/Controller.php",
+					"settings":
+					{
+						"buffer_size": 1376,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1002,
+								1002
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 282.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/app.php",
+					"settings":
+					{
+						"buffer_size": 4120,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1267,
+								1267
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 28.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "themes/basic/templates/common/form_div_layout.html.twig",
+					"settings":
+					{
+						"buffer_size": 5084,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								136,
+								136
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/sublime-text-2-twig/Syntaxes/HTML (Twig).tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "composer.json",
+					"settings":
+					{
+						"buffer_size": 989,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								638,
+								638
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "themes/basic/templates/layout.html.twig",
+					"settings":
+					{
+						"buffer_size": 1457,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								732,
+								732
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/sublime-text-2-twig/Syntaxes/HTML (Twig).tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				2,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.92125984252,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 280.0,
+	"status_bar_visible": true
+}

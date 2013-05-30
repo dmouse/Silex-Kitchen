@@ -16,24 +16,8 @@ if ('cli' !== php_sapi_name()) {
     ExceptionHandler::register();
 }
 
-$app = new Silex\Application();
 
-require __DIR__.'/../config/dev.php';
+$env = 'dev';
 require __DIR__.'/../src/app.php';
-require __DIR__.'/../src/controllers.php';
-
-
-$app->register(new MonologServiceProvider(), array(
-    'monolog.logfile' => __DIR__.'/../logs/silex_dev.log',
-));
-
-$app->register($p = new WebProfilerServiceProvider(), array(
-    'profiler.cache_dir' => __DIR__.'/../cache/profiler',
-));
-
-$app->mount('/_profiler', $p);
-
-
-
 
 $app->run();

@@ -1,85 +1,80 @@
 <?php
 
+use Silex\Provider\FormServiceProvider;
 use Silex\Provider\TwigServiceProvider;
-use Silex\Provider\UrlGeneratorServiceProvider;
-use Silex\Provider\ValidatorServiceProvider;
-use Silex\Provider\ServiceControllerServiceProvider;
 use SilexAssetic\AsseticServiceProvider;
+use Silex\Provider\SessionServiceProvider;
+use Silex\Provider\DoctrineServiceProvider;
+use Silex\Provider\SecurityServiceProvider;
+use Silex\Provider\ValidatorServiceProvider;
+use Symfony\Component\HttpFoundation\Response;
+use Silex\Provider\TranslationServiceProvider;
+use Silex\Provider\UrlGeneratorServiceProvider;
+use Nutwerk\Provider\DoctrineORMServiceProvider;
+use Walker\Silex\Provider\MongoDBServiceProvider;
+use Silex\Provider\ServiceControllerServiceProvider;
 
+/**
+ * Create Silex Application
+ */
+$app = new Silex\Application();
 
-$app->register(new UrlGeneratorServiceProvider());
-$app->register(new ValidatorServiceProvider());
+/**
+ * Register services
+ */
+$app->register(new DoctrineServiceProvider(), array('db.options' => array(
+    'driver'   => 'pdo_mysql',
+    'host'     => 'localhost',
+    'dbname'   => 'walker',
+    'user'     => 'root',
+    'password' => '',)));
 $app->register(new ServiceControllerServiceProvider());
-$app->register(new TwigServiceProvider(), array(
-    'twig.path'    => array($app['twig.options.templates']),
-    'twig.options' => array('cache' => __DIR__.'/../cache/twig'),
-));
-
-$app['twig'] = $app->share($app->extend('twig', function($twig, $app) {
-
-    return $twig;
-}));
-
-
-$app->register(new AsseticServiceProvider(), array(
-    'assetic.options' => array(
-        'debug' => $app['debug'],
-        'auto_dump_assets' => $app['debug'],
-    )
-));
-
-$app['assetic.filter_manager'] = $app->share(
-    $app->extend('assetic.filter_manager', function($fm, $app) {
-        $fm->set('lessphp', new Assetic\Filter\LessphpFilter());
-        return $fm;
-    })
-);
-
-$app['assetic.asset_manager'] = $app->share(
-    $app->extend('assetic.asset_manager', function($am, $app) {
-
-    	/**
-    	 * Twitter Boostrap
-    	 */
-
-        $am->set('bootstrap_css', new Assetic\Asset\AssetCache(
-            new Assetic\Asset\GlobAsset(
-                $app['assetic.input.bootstrap_css'],
-                array($app['assetic.filter_manager']->get('lessphp'))
+$app->register(new UrlGeneratorServiceProvider());
+$app->register(new TranslationServiceProvider());
+$app->register(new DoctrineORMServiceProvider());
+$app->register(new ValidatorServiceProvider());
+$app->register(new SecurityServiceProvider());
+$app->register(new SessionServiceProvider());
+$app->register(new AsseticServiceProvider());
+$app->register(new FormServiceProvider());
+$app->register(new TwigServiceProvider());
+$app->register(new MongoDBServiceProvider(), array(
+    'doctrine.odm.mongodb.connection_options' => array(
+        'database' => 'test',
+        'host'     => '127.0.0.1',
+        'port'     => '27017',
+    ),
+    'doctrine.odm.mongodb.documents' => array(
+        0 => array(
+            'type' => 'annotation',
+            'path' => array(
+                'src',
             ),
-            new Assetic\Cache\FilesystemCache($app['assetic.cache'])
-        ));
+            'namespace' => 'Walker'
+        ),
+    ),));
 
-        $am->set('bootstrap_js', new Assetic\Asset\AssetCache(
-            new Assetic\Asset\GlobAsset($app['assetic.input.bootstrap_js']),
-            new Assetic\Cache\FilesystemCache($app['assetic.cache'])
-        ));
+/**
+ * Load configurations
+ */
 
-        /**
-         * Theme
-         */
+require_once __DIR__ . '/../config/' . $env .'.php';
 
-        $am->set('theme_style', new Assetic\Asset\AssetCache(
-            new Assetic\Asset\GlobAsset(
-                $app['assetic.input.theme_css']
-            ),
-            new Assetic\Cache\FilesystemCache($app['assetic.cache'])
-        ));
-        $am->set('theme_js', new Assetic\Asset\AssetCache(
-            new Assetic\Asset\GlobAsset($app['assetic.input.theme_js']),
-            new Assetic\Cache\FilesystemCache($app['assetic.cache'])
-        ));
-        
+/**
+ * Routes
+ */
 
-        /**
-         * Get assets
-         */
+$app->mount('/', new Walker\Controller\Backend($app));
 
-        $am->get('bootstrap_css')->setTargetPath($app['assetic.output.bootstrap_css']);
-        $am->get('bootstrap_js')->setTargetPath($app['assetic.output.bootstrap_js']);
-        $am->get('theme_style')->setTargetPath($app['assetic.output.theme_css']);
-        $am->get('theme_js')->setTargetPath($app['assetic.output.theme_js']);
 
-        return $am;
-    })
-);
+/**
+ * Errors
+ */
+
+$app->error(function (\Exception $e, $code) use ($app) {
+    if ($app['debug']) {
+        return;
+    }
+    $page = 404 == $code ? '404.html.twig' : '500.html.twig';
+    return new Response($app['twig']->render($page, array('code' => $code)), $code);
+});

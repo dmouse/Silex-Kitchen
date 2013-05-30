@@ -1,3 +1,3 @@
 <?php
 
-	$app['theme'] = 'basic';
+	

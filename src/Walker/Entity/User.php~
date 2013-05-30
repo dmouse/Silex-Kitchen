@@ -1,0 +1,27 @@
+<?php
+
+// src/Walker/Entity/Article.php
+namespace Walker\Entity;
+
+use Doctrine\ODM\MongoDB\Mapping\Annotations as ODM;
+
+
+/** @ODM\Document(collection="users") */
+class User {
+    
+    /** @ODM\Id */
+    private $id;
+
+    /** @ODM\String */
+    private $username;
+
+    /** @ODM\String */
+    private $password;
+
+    /** @ODM\String */
+    private $email;
+
+    /** @ODM\String */
+    private $roles;
+
+}

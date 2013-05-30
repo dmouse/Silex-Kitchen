@@ -18,7 +18,7 @@
     </head>
     <body>
 
-        {{render(url('menu'))}}
+        {#{render(url('menu'))}#}
             
         <div class="container">
       
@@ -26,17 +26,15 @@
                 <h1>Hello, world!</h1>
             </div>
 
-            {% set alertTypeAvaillable = [ 'info', 'success', 'warning', 'error'] %}
-            {% for alert in alertTypeAvaillable %}
-                <div class="alert alert-{{ alert }}" >
-                    <button class="close" data-dismiss="alert">×</button>
-                    Message
-                </div>
-            {% endfor %}
-
             <div class="row">
                 <div class="span12">
                     {% block content %}{% endblock %}
+                    {% if is_granted('ROLE_ADMIN') %}
+                        Hello "{{ app.security.token.username }}".<br />
+                        <a href="{{ path('logout') }}">{{ 'Logout'|trans }}</a>
+                    {% else %}
+                        Your a not logged. Please <a href="{{ path('login') }}">{{ 'connect'|trans }}</a>
+                    {% endif %}
                 </div>
             </div>
 
