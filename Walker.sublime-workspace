@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"ex",
+				"exit"
+			],
+			[
+				"Re",
+				"Request"
+			],
+			[
+				"ar",
+				"article"
+			],
+			[
 				"a",
 				"app"
 			],
@@ -220,10 +232,6 @@
 				"config"
 			],
 			[
-				"ex",
-				"extract"
-			],
-			[
 				"costo_ma",
 				"costo_materia_prima"
 			],
@@ -292,26 +300,10 @@
 	"buffers":
 	[
 		{
-			"file": "src/controllers.php",
-			"settings":
-			{
-				"buffer_size": 1630,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "src/Walker/Controller/Backend.php",
 			"settings":
 			{
-				"buffer_size": 576,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/Walker/Controller/User.php",
-			"settings":
-			{
-				"buffer_size": 197,
+				"buffer_size": 1845,
 				"line_ending": "Unix"
 			}
 		},
@@ -319,46 +311,18 @@
 			"file": "src/Walker/Controller.php",
 			"settings":
 			{
-				"buffer_size": 1376,
+				"buffer_size": 1610,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/app.php",
+			"contents": "<?php\n\nnamespace Walker\\Controller;\n\nuse Symfony\\Component\\Security\\Core\\User\\UserProviderInterface;\nuse Symfony\\Component\\Security\\Core\\User\\UserInterface;\nuse Symfony\\Component\\Security\\Core\\User\\User;\nuse Symfony\\Component\\Security\\Core\\Exception\\UnsupportedUserException;\nuse Symfony\\Component\\Security\\Core\\Exception\\UsernameNotFoundException;\nuse Doctrine\\DBAL\\Connection;\n\nclass UserProvider implements UserProviderInterface {\n    private $conn;\n\n    public function __construct(Connection $conn) {\n        $this->conn = $conn;\n    }\n\n    public function loadUserByUsername($username) {\n\n        $stmt = $this->conn->executeQuery('SELECT * FROM User WHERE username = ?', array(strtolower($username)));\n\n        if (!$user = $stmt->fetch()) {\n            throw new UsernameNotFoundException(sprintf('Username \"%s\" does not exist.', $username));\n        }\n\n        return new User($user['username'], $user['password'], explode(',', $user['roles']), true, true, true, true);\n    }\n\n    public function refreshUser(UserInterface $user) {\n        if (!$user instanceof User) {\n            throw new UnsupportedUserException(sprintf('Instances of \"%s\" are not supported.', get_class($user)));\n        }\n\n        return $this->loadUserByUsername($user->getUsername());\n    }\n\n    public function supportsClass($class) {\n        return $class === 'Symfony\\Component\\Security\\Core\\User\\User';\n    }\n}",
+			"file": "src/Walker/Controller/UserProvider.php",
+			"file_size": 1398,
+			"file_write_time": 1369876180000000,
 			"settings":
 			{
-				"buffer_size": 4120,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "themes/basic/templates/common/form_div_layout.html.twig",
-			"settings":
-			{
-				"buffer_size": 5084,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "composer.json",
-			"settings":
-			{
-				"buffer_size": 989,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "themes/basic/templates/layout.html.twig",
-			"settings":
-			{
-				"buffer_size": 1457,
+				"buffer_size": 1398,
 				"line_ending": "Unix"
 			}
 		}
@@ -366,7 +330,7 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 272.0,
+		"height": 392.0,
 		"selected_items":
 		[
 			[
@@ -395,18 +359,32 @@
 	},
 	"file_history":
 	[
+		"/home/dmouse/public_html/Silex-Skeleton/src/app.php",
+		"/home/dmouse/public_html/Silex-Skeleton/src/Nuup/Controller.php",
+		"/home/dmouse/public_html/Silex-Skeleton/src/console.php",
+		"/home/dmouse/public_html/Silex-Skeleton/src/Walker/Silex/Provider/MongoDBServiceProvider.php",
+		"/home/dmouse/public_html/Silex-Skeleton/src/Walker/Entity/User.php",
+		"/home/dmouse/public_html/Silex-Skeleton/src/Walker/Entity/Article.php",
+		"/home/dmouse/public_html/Silex-Skeleton/config/prod.php",
+		"/home/dmouse/public_html/Silex-Skeleton/web/index.php",
+		"/home/dmouse/public_html/Silex-Skeleton/web/index_dev.php",
+		"/home/dmouse/public_html/Silex-Skeleton/config/dev.php",
+		"/home/dmouse/public_html/Silex-Skeleton/themes/basic/templates/404.html.twig",
+		"/home/dmouse/public_html/Silex-Skeleton/themes/basic/templates/layout.html.twig",
+		"/home/dmouse/public_html/Silex-Skeleton/src/controllers.php",
+		"/home/dmouse/public_html/Silex-Skeleton/config/app.php",
+		"/home/dmouse/public_html/Silex-Skeleton/config/dev.json",
+		"/home/dmouse/public_html/Silex-Skeleton/config/prod.json",
+		"/home/dmouse/public_html/Silex-Skeleton/composer.json",
+		"/home/dmouse/public_html/Silex-Skeleton/themes/basic/templates/common/form_div_layout.html.twig",
 		"/home/dmouse/public_html/Silex-Skeleton/src/Toddle/Controller/Backend.php",
 		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_bancos/ccp_haber_bancos.php",
 		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_anticipo_clientes/ccp_haber_anticipo_clientes.php",
 		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_anticipo_clientes/ccp_debe_anticipo_clientes.php",
 		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_bancos/ccp_debe_bancos.php",
-		"/home/dmouse/public_html/Silex-Skeleton/web/index.php",
 		"/home/dmouse/public_html/Silex-Skeleton/themes/basic/templates/menu.html.twig",
 		"/home/dmouse/public_html/Silex-Skeleton/themes/basic/js/main.js",
-		"/home/dmouse/public_html/Silex-Skeleton/config/prod.php",
-		"/home/dmouse/public_html/Silex-Skeleton/config/app.php",
 		"/home/dmouse/public_html/Silex-Skeleton/themes/basic/templates/layout.html",
-		"/home/dmouse/public_html/Silex-Skeleton/web/index_dev.php",
 		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_caja/ccp_haber_caja.php",
 		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_anticipo_proveedores/ccp_anticipo_proveedores.module",
 		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_caja/ccp_caja.module",
@@ -508,21 +486,7 @@
 		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/cpp_ipp/cpp_ipp.module",
 		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/bc/bc_debe.module",
 		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_clientes/ccp_clientes.info",
-		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_costos_de_venta/ccp_costo_de_venta.module",
-		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/cpp_ipt/cpp_ipt.info",
-		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/cpp_ipp/cpp_ipp.info",
-		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_costos_de_venta/ccp_costo_de_venta.info",
-		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_cif/ccp_cif.module<",
-		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_caja/ccp_caja.info",
-		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_bancos/ccp_bancos.info",
-		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_proveedores/ccp_proveedores.info",
-		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_imp/ccp_imp.info",
-		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_cif/ccp_cif.info",
-		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_documentos_por_cobrar/ccp_debe_documentos_por_cobrar.php",
-		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/bc_debe.module",
-		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_debe_ipp.php",
-		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_haber_ipp.php",
-		"/home/dmouse/Downloads/SMS/sms_console.py"
+		"/home/dmouse/testing/contable/sites/all/modules/anel/cc_anel/cc_config/config/ccp_costos_de_venta/ccp_costo_de_venta.module"
 	],
 	"find":
 	{
@@ -540,6 +504,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"doctrine.odm.mongodb.dm",
+			"doctrine.odm.mongodb.configuration",
+			"respon",
+			"doctr",
 			"tran",
 			"trans",
 			"operation",
@@ -605,139 +573,49 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/controllers.php",
+					"file": "src/Walker/Controller/Backend.php",
 					"settings":
 					{
-						"buffer_size": 1630,
+						"buffer_size": 1845,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								433,
-								433
+								968,
+								968
 							]
 						],
 						"settings":
 						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_mark_style": "outline",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 270.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "src/Walker/Controller/Backend.php",
+					"file": "src/Walker/Controller.php",
 					"settings":
 					{
-						"buffer_size": 576,
+						"buffer_size": 1610,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								196,
-								196
+								166,
+								166
 							]
 						],
 						"settings":
@@ -752,450 +630,23 @@
 				},
 				{
 					"buffer": 2,
-					"file": "src/Walker/Controller/User.php",
+					"file": "src/Walker/Controller/UserProvider.php",
 					"settings":
 					{
-						"buffer_size": 197,
+						"buffer_size": 1398,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								194,
-								194
+								229,
+								229
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/Walker/Controller.php",
-					"settings":
-					{
-						"buffer_size": 1376,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1002,
-								1002
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 282.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "src/app.php",
-					"settings":
-					{
-						"buffer_size": 4120,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1267,
-								1267
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_mark_style": "outline",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 28.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "themes/basic/templates/common/form_div_layout.html.twig",
-					"settings":
-					{
-						"buffer_size": 5084,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								136,
-								136
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/sublime-text-2-twig/Syntaxes/HTML (Twig).tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "composer.json",
-					"settings":
-					{
-						"buffer_size": 989,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								638,
-								638
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_mark_style": "outline",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "themes/basic/templates/layout.html.twig",
-					"settings":
-					{
-						"buffer_size": 1457,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								732,
-								732
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_mark_style": "outline",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/sublime-text-2-twig/Syntaxes/HTML (Twig).tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1256,7 +707,7 @@
 		"rows":
 		[
 			0.0,
-			0.92125984252,
+			0.945175438596,
 			1.0
 		]
 	},

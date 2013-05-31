@@ -1,6 +1,6 @@
 <?php
 
-namespace Walker\Controller;
+namespace Nuup\Controller;
 
 use Symfony\Component\Security\Core\User\UserProviderInterface;
 use Symfony\Component\Security\Core\User\UserInterface;

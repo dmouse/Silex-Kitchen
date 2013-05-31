@@ -1,6 +1,6 @@
 <?php
 
-use Walker\Controller;
+use Nuup\Controller;
 
 use Silex\Provider\SessionServiceProvider;
 use Silex\Provider\SecurityServiceProvider;

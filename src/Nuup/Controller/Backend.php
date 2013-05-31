@@ -1,13 +1,13 @@
 <?php
 
-namespace Walker\Controller;
+namespace Nuup\Controller;
 
-use Walker\Controller;
+use Nuup\Controller;
 use Silex\Application;
 use Silex\ControllerCollection;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Walker\Silex\Provider\MongoDBServiceProvider;
+use Nuup\Silex\Provider\MongoDBServiceProvider;
 
 
 class Backend extends Controller{
@@ -34,7 +34,7 @@ class Backend extends Controller{
 
     public function indexAction(Request $request, Application $app) {
 
-    	$article = new \Walker\Entity\Article();
+    	$article = new \Nuup\Entity\Article();
         $article->setTitle('=)');
         $app['doctrine.odm.mongodb.dm']->persist($article);
         $app['doctrine.odm.mongodb.dm']->flush();

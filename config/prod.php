@@ -146,7 +146,7 @@ $app['db.orm.entities']              = array(
     array(
         'type'      => 'annotation',       // entity definition 
         'path'      => __DIR__ ,   // path to your entity classes
-        'namespace' => 'Walker\Entity', // your classes namespace
+        'namespace' => 'Nuup\Entity', // your classes namespace
     )
 );
 
@@ -164,7 +164,7 @@ $app['security.firewalls'] = array(
         'logout'    => true,
         'anonymous' => true,
         'users'     => $app->share(function () use ($app) {
-            return new Walker\Controller\UserProvider($app['db']);
+            return new Nuup\Controller\UserProvider($app['db']);
         }),
     ),
 );

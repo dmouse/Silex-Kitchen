@@ -1,7 +1,7 @@
 <?php
 
 // src/Walker/Entity/Article.php
-namespace Walker\Entity;
+namespace Nuup\Entity;
 
 use Doctrine\ODM\MongoDB\Mapping\Annotations as ODM;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Walker;
+namespace Nuup;
 
 use Silex\Application;
 use Silex\ControllerCollection;

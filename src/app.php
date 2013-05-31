@@ -11,7 +11,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Silex\Provider\TranslationServiceProvider;
 use Silex\Provider\UrlGeneratorServiceProvider;
 use Nutwerk\Provider\DoctrineORMServiceProvider;
-use Walker\Silex\Provider\MongoDBServiceProvider;
+use Nuup\Silex\Provider\MongoDBServiceProvider;
 use Silex\Provider\ServiceControllerServiceProvider;
 
 /**
@@ -50,7 +50,7 @@ $app->register(new MongoDBServiceProvider(), array(
             'path' => array(
                 'src',
             ),
-            'namespace' => 'Walker'
+            'namespace' => 'Nuup'
         ),
     ),));
 
@@ -64,7 +64,7 @@ require_once __DIR__ . '/../config/' . $env .'.php';
  * Routes
  */
 
-$app->mount('/', new Walker\Controller\Backend($app));
+$app->mount('/', new Nuup\Controller\Backend($app));
 
 
 /**

@@ -1,6 +1,6 @@
 <?php
 
-namespace Walker\Silex\Provider;
+namespace Nuup\Silex\Provider;
 
 use Silex\Application;
 use Silex\ServiceProviderInterface;
