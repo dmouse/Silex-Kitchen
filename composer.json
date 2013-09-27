@@ -20,7 +20,7 @@
         "doctrine/dbal"         : "~2.3",
         "taluu/doctrine-orm-provider": "1.0.*@dev",
 
-        "doctrine/mongodb-odm": "dev-document-persister-prep",
+        "doctrine/mongodb-odm": "1.0.*@dev",
 
         "twitter/bootstrap"     : "2.3.*",
         "leafo/lessphp"         : "dev-master",
